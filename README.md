@@ -28,13 +28,13 @@ Users should be able to:
 ![Mobile](./screenshot-mobile.png)
 
 #### Desktop
-![Desktop](./screenshot-desktop.jpg)
+![Desktop](./screenshot-desktop.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Source](https://github.com/waltersono/huddle_landing_page)
+- Live Site URL: [Live](https://waltersono.github.io/huddle_landing_page/)
 
 ## My process
 
