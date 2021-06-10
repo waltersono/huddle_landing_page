@@ -1,0 +1,147 @@
+:root {
+    --color-violet: hsl(257, 40%, 49%);
+    --color-soft-magenta: hsl(300, 69%, 71%);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: var(--color-violet);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.logo-box {
+    padding: 4rem 0;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.text-box {
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.h1 {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+}
+
+.paragraph {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.paragraph:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    background-color: #fff;
+    color: var(--color-violet);
+    padding: 1em 7em;
+    font-size: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+
+.social-icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+.icon {
+    height: 5rem;
+    width: 5rem;
+    fill: currentColor;
+    transition: all 0.3s;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 90%;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .text-box {
+        text-align: left;
+        padding: 5rem;
+        width: 60%;
+    }
+
+    .illustration {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+
+    .btn:active,
+    .icon:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    }
+
+    .icon:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
+
+    .icon:active {
+        transform: translateY(-1px);
+    }
+}
