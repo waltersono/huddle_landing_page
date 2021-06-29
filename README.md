@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source](https://github.com/waltersono/huddle_landing_page)
-- Live Site URL: [Live](https://waltersono.github.io/huddle_landing_page/)
+- Solution URL: [Source code](https://github.com/waltersono/huddle_landing_page)
+- Live Site URL: [Live project](https://waltersono.github.io/huddle_landing_page/)
 
 ## My process
 
@@ -44,6 +44,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Media queries
 
 ## Author
 

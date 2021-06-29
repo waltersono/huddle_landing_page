@@ -29,11 +29,15 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 144rem;
     margin: 2rem auto;
     width: 80%;
 }
-
+.illustration-box {
+    text-align: center;
+    animation: moveInLeft 1s ease-out 0.5s;
+    animation-fill-mode: backwards;
+}
 .logo-box {
     padding: 4rem 0;
 }
@@ -45,6 +49,8 @@ body {
 .text-box {
     text-align: center;
     padding: 10rem 0;
+    animation: moveInRight 1s ease-out 0.5s;
+    animation-fill-mode: backwards;
 }
 
 .h1 {
@@ -91,6 +97,14 @@ body {
     transition: all 0.3s;
 }
 
+.icon__link {
+    color: white;
+}
+
+.icon__link:hover .icon {
+    fill: var(--color-soft-magenta);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -99,7 +113,40 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1440px) {
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 30em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (min-width: 68.75em) {
+    html {
+        font-size: 60%;
+    }
     .container {
         width: 90%;
     }
